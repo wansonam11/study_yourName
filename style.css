@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Noto+Serif+JP&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Fredericka+the+Great&family=PT+Serif&family=Rajdhani&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+main.morning {
+  background-image: url(img/morning.jpg);
+}
+main.day {
+  background-image: url(img/day.jpg);
+}
+main.sunset {
+  background-image: url(img/sunset.jpg);
+}
+main.night {
+  background-image: url(img/night.jpg);
+}
+main.dark-text figure .screen .time {
+  color: #fff;
+  text-shadow: 3px 4px 5px #bbb;
+}
+main header {
+  width: 90vw;
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main header h1 {
+  font: bold 30px/1 "orbitron";
+  color: #fff;
+  position: relative;
+  z-index: 999;
+}
+main header #sns {
+  display: flex;
+}
+main header #sns li {
+  margin: 0px 10px;
+}
+main header #sns li i {
+  color: #fff;
+}
+main figure {
+  filter: brightness(0.9);
+  width: 800px;
+  height: 100%;
+  position: absolute;
+  right: -10vw;
+  bottom: -30vh;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(img/hand.png);
+}
+main figure .screen {
+  width: 324px;
+  height: 209px;
+  position: absolute;
+  top: 73px;
+  left: 76px;
+  display: flex;
+}
+main figure .screen .time {
+  display: flex;
+  font: 42px/300px "orbitron";
+  color: #fff;
+  overflow: hidden;
+  margin: 0 auto;
+  align-items: center;
+}
+main figure .screen .time em {
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  line-height: 1;
+  font-size: 20px;
+  opacity: 0;
+}
+main figure .screen .time em.on {
+  opacity: 1;
+}
+main figure .screen .time span {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+}
+main nav {
+  width: 90vw;
+  height: 35px;
+  position: absolute;
+  left: 5vw;
+  bottom: 7vh;
+  display: flex;
+  justify-content: space-between;
+}
+main nav span {
+  width: 23%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: bold 16px/1 "orbitron";
+  color: #fff;
+  border: 1px solid #bbb;
+  opacity: 0.9;
+  transition: 0.5s;
+}
+main nav span.on {
+  background: rgba(255, 255, 255, 0.8);
+  font: bold 18px/1 "orbitron";
+  border: 1px solid #fff;
+  color: #000;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=style.css.map */
