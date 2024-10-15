@@ -2,12 +2,6 @@ const numbers = document.querySelectorAll(".screen span");
 const main = document.querySelector("main");
 const menus = document.querySelectorAll("nav span");
 
-//on이 붙는게 두개이므로 비구조화할당을 일단 가져올 수 있다.
-const [am, pm] = document.querySelectorAll(".screen em");
-
-//1초마다 카운트
-//데이트 객체로부터 시간을 뽑아와야함
-
 setInterval(() => {
   let now = new Date();
   let hr = now.getHours();
@@ -35,15 +29,13 @@ setInterval(() => {
     main.classList.remove("dark_text");
   }
 
-  //시간을 구함
   const times = setTime(now);
 
-  //0을 붙임
   times.forEach((time, index) => getTime(time, index));
 }, 1000);
 
 function setTime(now) {
-  let hr = now.getHours(); //getHourse메소드를 호출해서 현재시간 전달
+  let hr = now.getHours();
   let min = now.getMinutes();
   let sec = now.getSeconds();
 
