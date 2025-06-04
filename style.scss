@@ -64,7 +64,7 @@ main {
     align-items: center;
 
     h1 {
-      font: bold 30px/1 "orbitron";
+      font: bold 3rem/1 "Zen Old Mincho";
       color: #fff;
       position: relative;
       z-index: 999;
@@ -144,23 +144,26 @@ main {
     span {
       width: 23%;
       height: 100%;
-      background: rgba(255, 255, 255, .3);
+      background: rgba(255, 255, 255, .5);
       display: flex;
       justify-content: center;
       align-items: center;
-      font: bold 16px/1 "orbitron";
-      color: #fff;
+      color: #000;
       border: 1px solid #bbb;
       opacity: .9;
       transition: .5s;
+      font: bold 18px/1 "Zen Old Mincho";
 
-      &.on {
-        background: rgba(255, 255, 255, .8);
-        font: bold 18px/1 "orbitron";
+      &.active {
+        background: rgba(255, 255, 255, 1);
+        font: bold 20px/1 "Zen Old Mincho";
         border: 1px solid #fff;
         color: #000;
         opacity: 1;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.8); 
+        
       }
+
     }
   }
 }

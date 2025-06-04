@@ -18,8 +18,8 @@ setInterval(() => {
       main.className = "";
       main.classList.add(item.name);
 
-      for (let menu of menus) menu.classList.remove("on");
-      menus[index].classList.add("on");
+      for (let menu of menus) menu.classList.remove("active");
+      menus[index].classList.add("active");
     }
   });
 
